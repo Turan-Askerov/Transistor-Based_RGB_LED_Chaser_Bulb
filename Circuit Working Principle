@@ -1,0 +1,44 @@
+📜 Circuit Working Principle
+
+This circuit is a 3-stage transistor-based sequential LED driver, functioning similarly to an asynchronous (ripple) counter or LED chaser, 
+but built entirely with discrete components — transistors, capacitors, and resistors — without any ICs.
+
+🔹 How It Works
+
+1. Power Supply
+- The circuit operates from a 5V DC source (USB power).
+
+2. Astable Multivibrator Action
+
+- Each stage consists of:
+
+  - NPN transistor (BC547)
+
+  - Capacitor
+
+  - Base bias resistor
+
+- The capacitors between the stages provide a time delay by controlling how quickly the next transistor turns on.
+
+- When a transistor turns on, it connects its LED(s) to ground, lighting them.
+
+3. Sequential Switching
+
+- The first transistor turns on, its capacitor begins charging toward the base of the second transistor.
+
+- Once the capacitor voltage reaches the threshold, the second transistor turns on and the first turns off.
+
+- This process repeats for the third stage and loops back to the first, creating a repeating LED sequence.
+
+4. LED Color Arrangement
+
+- Stage 1 → Blue LED
+
+- Stage 2 → Green LED
+
+- Stage 3 → Two red LEDs (connected in parallel for extra brightness, since each red LED drops ~2V).
+
+The sequence cycles through Blue → Green → Red → Blue...
+
+5. Why No IC?
+- This design demonstrates that you can achieve a sequential LED lighting effect purely with discrete components, without relying on 555 timers, CD4017 counters, or microcontrollers.
