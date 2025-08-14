@@ -42,12 +42,11 @@ The aim of this project is to convert a standard non-RGB LED bulb into a custom 
 
 - Visual Effect: A smooth cycling RGB effect, turning a normal LED bulb into a custom RGB lamp.
 
-📷 Project Image
-
 ✨ Key Points
 
 - Fully hand-built without using microcontrollers.
 
-Based on transistor logic and timing circuits.
+- Based on transistor logic and timing circuits.
 
-Custom LED arrangement allows brightness balancing between colors.
+- Custom LED arrangement allows brightness balancing between colors.
+  
